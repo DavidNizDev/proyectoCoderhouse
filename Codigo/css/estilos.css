@@ -152,11 +152,8 @@ nav .enlaces a {
   justify-content: center;
   background: #000;
   background: -moz-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-size: 400% 400%;
   background-repeat: no-repeat;
   width: 500px;
@@ -182,9 +179,6 @@ nav .enlaces a {
   top: 0;
   background: #000 no-repeat center center;
   background-size: cover;
-  /*   width: 100%;
-  height: 100%;
- */
   z-index: 1;
   opacity: .5;
   mix-blend-mode: screen;
@@ -211,11 +205,8 @@ nav .enlaces a {
   justify-content: center;
   background: transparent;
   background: -moz-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
-  /* FF3.6-15 */
   background: -webkit-linear-gradient(-45deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
-  /* Chrome10-25,Safari5.1-6 */
   background: linear-gradient(135deg, #000000 0%, #000000 25%, #1e539e 50%, #ff3083 75%, #7800a8 100%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   background-size: 400% 400%;
   background-repeat: no-repeat;
   width: 500px;

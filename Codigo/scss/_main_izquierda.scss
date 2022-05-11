@@ -1,0 +1,20 @@
+@import "./variables";
+
+.main1 {
+    grid-column: 1;
+    grid-row: 2 / 4;
+    display: grid;
+}
+
+.main1 h2 {
+    text-align: center;
+    color: $color-verde-eko;
+    font-size: 35px;
+    width: 85%;
+}
+
+.main1 p {
+    padding-top: 100px;
+    font-size: 20px;
+    width: 85%;
+}

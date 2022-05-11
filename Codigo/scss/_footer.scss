@@ -1,0 +1,29 @@
+.footer {
+    grid-column: 1 / 4;
+    grid-row: 4;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2, 50%);
+
+    .iconos_redes {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .logo_fb img {
+        height: 47px;
+    }
+
+    .logo_ig img {
+        height: 65px;
+    }
+
+    .logo_wsp img {
+        height: 51px;
+    }
+
+    .derechos_reservados {
+        width: 100%;
+    }
+}
