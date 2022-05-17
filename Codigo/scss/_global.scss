@@ -63,3 +63,17 @@ body {
     height: 100%;
     background: #57cc99;
 }
+
+$botonesNav: (
+    botonInicio: rgb(73, 73, 226),
+    botonServicios: red,
+    botonProductos: orange,
+    botonContacto: lightgreen,
+    botonSobre: gray,
+);
+
+@each $name, $color in $botonesNav {
+    .#{$name} {
+        background-color: $color;
+    }
+}
