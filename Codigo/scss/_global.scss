@@ -3,8 +3,6 @@
     padding: 0;
 }
 
-@import "./_index_mediasq.scss";
-
 body {
     background: radial-gradient(1.5em 6.28571em at 1.95em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(1.5em 6.28571em at -0.45em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 1.5em 5.5em, radial-gradient(2.3em 4.57143em at 2.99em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(2.3em 4.57143em at -0.69em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.3) 50%, rgba(255, 255, 255, 0.3) 55%, rgba(255, 255, 255, 0) 55%) 2.3em 4em, radial-gradient(3.5em 6.28571em at 4.55em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 0 0, radial-gradient(3.5em 6.28571em at -1.05em, rgba(255, 255, 255, 0) 50%, rgba(255, 255, 255, 0.25) 50%, rgba(255, 255, 255, 0.25) 55%, rgba(255, 255, 255, 0) 55%) 3.5em 5.5em, radial-gradient(#15ffa5, #00ced1);
     background-color: mediumspringgreen;
@@ -12,68 +10,4 @@ body {
     background-repeat: repeat;
 }
 
-.contenedor {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    grid-template-rows: repeat(4, 300px);
-    width: 85%;
-    margin: 1.6em auto;
-}
 
-/* BOTONES ANIMADOS */
-.css-button-sliding-to-left--green {
-    min-width: 130px;
-    height: 40px;
-    color: #fff;
-    padding: 5px 10px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    position: relative;
-    display: inline-block;
-    outline: none;
-    border-radius: 5px;
-    z-index: 0;
-    background: transparent;
-    overflow: hidden;
-    border: 2px solid #57cc99;
-    color: #57cc99;
-    text-align: center;
-    display: grid;
-    align-content: center;
-}
-
-.css-button-sliding-to-left--green:hover {
-    color: #fff;
-}
-
-.css-button-sliding-to-left--green:hover:after {
-    width: 100%;
-}
-
-.css-button-sliding-to-left--green:after {
-    content: "";
-    position: absolute;
-    z-index: -1;
-    transition: all 0.3s ease;
-    left: 0;
-    top: 0;
-    width: 0;
-    height: 100%;
-    background: #57cc99;
-}
-
-$botonesNav: (
-    botonInicio: rgb(73, 73, 226),
-    botonServicios: red,
-    botonProductos: orange,
-    botonContacto: lightgreen,
-    botonSobre: gray,
-);
-
-@each $name, $color in $botonesNav {
-    .#{$name} {
-        background-color: $color;
-    }
-}

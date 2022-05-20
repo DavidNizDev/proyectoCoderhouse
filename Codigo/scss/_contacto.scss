@@ -1,0 +1,84 @@
+.contenedor_contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr 400px 1fr;
+    width: 85%;
+    grid-gap: 10px;
+    margin: 1.6em auto;
+}
+
+.main_contacto {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.text_form {
+    color: rgb(49, 102, 102);
+}
+
+.form label {
+    color: rgb(107, 19, 41);
+    font-size: 20px;
+}
+
+.footer_contacto {
+    grid-column: 1 /3;
+    grid-row: 3;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2, 50%);
+}
+
+.footer_contacto .iconos_redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer_contacto .logo_fb img {
+    height: 47px;
+}
+
+.footer_contacto .logo_ig img {
+    height: 64px;
+}
+
+.footer_contacto .logo_wsp img {
+    height: 50px;
+}
+
+.footer_contacto .derechos_reservados {
+    width: 100%;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+    .contenedor_contacto {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 300px 400px 1fr;
+        width: 85%;
+        grid-gap: 10px;
+        margin: 1.6em auto;
+        grid-template-areas:
+            "header header"
+            "main_contacto main_contacto"
+            "footer footer";
+    }
+
+    .main_contacto {
+        grid-area: main_contacto;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contenedor_contacto {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 300px 400px 300px;
+        grid-template-areas:
+            "header"
+            "main_contacto"
+            "footer";
+    }
+}

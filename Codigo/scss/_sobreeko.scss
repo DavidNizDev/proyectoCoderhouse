@@ -1,0 +1,68 @@
+.contenedor_sobre {
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(3, 300px);
+    width: 85%;
+    grid-gap: 10px;
+    margin: 1.6em auto;
+}
+
+.main_sobre {
+    display: grid;
+    grid-column: 1 / 3;
+    grid-row: 2;
+}
+
+.footer_sobre {
+    grid-column: 1 / 3;
+    grid-row: 3;
+    display: grid;
+    justify-content: center;
+    grid-template-rows: repeat(2, 50%);
+}
+
+.footer_sobre .iconos_redes {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.footer_sobre .logo_fb img {
+    height: 47px;
+}
+
+.footer_sobre .logo_ig img {
+    height: 64px;
+}
+
+.footer_sobre .logo_wsp img {
+    height: 50px;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+    .contenedor_sobre {
+        display: grid;
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: 300px 400px 300px;
+        grid-template-areas:
+            "header header"
+            "main_sobre main_sobre"
+            "footer footer";
+    }
+
+    .main_sobre {
+        grid-area: main_sobre;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contenedor_sobre {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 300px 600px 300px;
+        grid-template-areas:
+            "header"
+            "main_sobre"
+            "footer";
+    }
+}

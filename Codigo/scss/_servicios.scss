@@ -1,0 +1,153 @@
+.contenedor_servicios {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: repeat(4, 300px);
+    width: 85%;
+    margin: 1.6em auto;
+}
+
+.main1_serv {
+    display: grid;
+}
+
+.main2_serv {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(4, 151.5px);
+    border: solid 2px black;
+}
+
+.cajita1 {
+    border-bottom: 2px solid black;
+    display: grid;
+}
+
+.cajita1 h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cajita1 p {
+    justify-self: center;
+}
+
+.cajita2 {
+    border-bottom: 2px solid black;
+    display: grid;
+}
+
+.cajita2 h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cajita2 p {
+    justify-self: center;
+}
+
+.cajita3 {
+    border-bottom: 2px solid black;
+    display: grid;
+}
+
+.cajita3 h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cajita3 p {
+    justify-self: center;
+}
+
+.cajita4 {
+    display: grid;
+}
+
+.cajita4 h3 {
+    text-align: center;
+    padding-top: 10px;
+}
+
+.cajita4 p {
+    justify-self: center;
+}
+
+@media screen and (min-width: 576px) and (max-width: 1023px) {
+    .contenedor_servicios {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 400px auto 400px 300px;
+        grid-template-areas:
+            "header"
+            "main2_serv"
+            "main1_serv"
+            "footer";
+    }
+
+    .encabezado {
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .main1_serv {
+        grid-area: main1_serv;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main1_serv h3 {
+        text-align: center;
+    }
+
+    .main2_serv {
+        grid-area: main2_serv;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .contenedor_servicios {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+        grid-template-rows: 400px auto 400px 300px;
+        grid-template-areas:
+            "header"
+            "main2_serv"
+            "main1_serv"
+            "footer";
+    }
+
+    .encabezado {
+        grid-area: header;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .main1_serv {
+        grid-area: main1_serv;
+        display: grid;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main1_serv h3 {
+        text-align: center;
+    }
+
+    .main1_serv iframe {
+        justify-self: center;
+        max-width: 90%;
+    }
+
+    .main2_serv {
+        grid-area: main2_serv;
+    }
+}

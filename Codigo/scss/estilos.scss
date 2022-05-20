@@ -1,8 +1,9 @@
-@import "./variables";
-@import "./global";
-@import "./header";
-@import "./footer";
-@import "./main_izquierda";
-@import "./main_derecha";
-@import "./main";
-@import "./index_mediasq";
+@use "./variables";
+@use "./global";
+@use "./index";
+@use "./servicios";
+@use "./productos";
+@use "./contacto";
+@use "./sobreeko";
+@use "./header";
+@use "./footer";
